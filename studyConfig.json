@@ -1,0 +1,845 @@
+{
+  "_id": "",
+  "study_info": {
+    "study_title": "Yonsei BP",
+    "study_description": "Bedtime Procrastination via Media Usage",
+    "researcher_first": "Jimin",
+    "researcher_last": "Kim",
+    "researcher_contact": "jmjh1204@yonsei.ac.kr"
+  },
+  "database": {
+    "database_host": "yonseibp-db.cdywa248o4x0.ap-northeast-2.rds.amazonaws.com",
+    "database_port": "3306",
+    "database_name": "aware_test",
+    "database_username": "yonseibp_insert",
+    "database_password": "-",
+    "config_without_password": true,
+    "rootUsername": "-",
+    "rootPassword": "-",
+    "require_ssl": true
+  },
+  "createdAt": "",
+  "updatedAt": "2026-11-10T09:39:46.065Z",
+  "questions": [
+    {
+      "esm_title": "오늘 하루 피로 정도",
+      "instructions": "지금 느껴지는 오늘 하루의 피로 정도를 체크해주세요.",
+      "esm_notification_timeout": 3600,
+      "esm_expiration_threshold": 3600,
+      "esm_type": 6,
+      "esm_likert_max": 100,
+      "esm_scale_min": 0,
+      "esm_scale_max": 100,
+      "esm_scale_min_label": "전혀 피로하지 않음",
+      "esm_scale_max_label": "매우 피로함",
+      "esm_scale_step": 25,
+      "esm_scale_start": 50,
+      "esm_submit": "제출",
+      "id": 1
+    },
+    {
+      "esm_submit": "제출",
+      "esm_title": "오늘 하루 스트레스 정도",
+      "instructions": "지금 느껴지는 오늘 하루의 스트레스 정도를 체크해주세요.",
+      "esm_type": 6,
+      "esm_scale_min": 0,
+      "esm_scale_max": 100,
+      "esm_scale_min_label": "전혀 스트레스 받지 않음",
+      "esm_scale_max_label": "매우 스트레스 받음",
+      "esm_scale_step": 25,
+      "esm_scale_start": 50,
+      "esm_notification_timeout": 3600,
+      "esm_expiration_threshold": 3600,
+      "id": 2
+    },
+    {
+      "esm_submit": "제출",
+      "esm_title": "취침 예정 시각",
+      "instructions": "오늘 몇 시에 잠을 청할 생각인가요? (nn시 nn분)",
+      "esm_type": 1,
+      "id": 3
+    },
+    {
+      "esm_submit": "제출",
+      "esm_title": "내일 첫 일정",
+      "instructions": "내일 첫 일정은 몇 시인가요? (nn시 nn분 형태로 답변해주세요)",
+      "esm_type": 1,
+      "esm_quick_answers": [],
+      "esm_notification_timeout": 3600,
+      "esm_expiration_threshold": 3600,
+      "id": 4
+    },
+    {
+      "esm_submit": "제출",
+      "esm_title": "정서",
+      "instructions": "안 좋은 생각이나 기분에서 벗어나고 싶다",
+      "esm_type": 4,
+      "esm_likert_max": 7,
+      "esm_likert_min_label": "전혀 그렇지 않다",
+      "esm_likert_max_label": "매우 그렇다",
+      "esm_notification_timeout": 1800,
+      "esm_expiration_threshold": 1800,
+      "id": 5
+    },
+    {
+      "esm_submit": "제출",
+      "esm_title": "정서",
+      "instructions": "뭔가 즐거운 걸 하고 싶다",
+      "esm_type": 4,
+      "esm_likert_max": 7,
+      "esm_likert_min_label": "전혀 그렇지 않다",
+      "esm_likert_max_label": "매우 그렇다",
+      "esm_notification_timeout": 1800,
+      "esm_expiration_threshold": 1800,
+      "id": 6
+    },
+    {
+      "esm_submit": "제출",
+      "esm_title": "알림이 오기 전 10분 동안 무엇을 하고 있었나요?",
+      "instructions": "복수 선택 가능",
+      "esm_type": 3,
+      "esm_checkboxes": [
+        "핸드폰",
+        "PC",
+        "TV",
+        "공부/일",
+        "씻기/정리",
+        "기타"
+      ],
+      "esm_notification_timeout": 1800,
+      "esm_expiration_threshold": 1800,
+      "id": 7
+    },
+    {
+      "esm_submit": "Submit",
+      "esm_title": "졸린 정도",
+      "instructions": "지금 졸린 정도를 선택해주세요.",
+      "esm_type": 2,
+      "esm_radios": [
+        "1 - 매우 또렷함",
+        "2 - 아주 또렷함",
+        "3 - 또렷함",
+        "4 - 다소 또렷함",
+        "5 - 또렷하지도 졸리지도 않음",
+        "6 - 졸린 기색이 조금 있음",
+        "7 - 졸리지만 깨어 있으려고 애쓰지 않아도 됨",
+        "8 - 졸리고 깨어 있으려면 노력이 필요함",
+        "9 - 매우 졸리고 깨어 있으려고 몹시 애쓰며 졸음과 싸우는 중"
+      ],
+      "esm_notification_timeout": 1800,
+      "esm_expiration_threshold": 1800,
+      "id": 8
+    },
+    {
+      "esm_submit": "제출",
+      "esm_title": "어젯밤 실제로 침대에 누운 시각",
+      "instructions": "nn시 nn분 형태로 답변해주세요.",
+      "esm_type": 1,
+      "esm_notification_timeout": 10800,
+      "esm_expiration_threshold": 10800,
+      "id": 9
+    },
+    {
+      "esm_submit": "제출",
+      "esm_title": "어젯밤 실제로 잠을 청한 시각",
+      "instructions": "nn시 nn분 형태로 답변해주세요.",
+      "esm_type": 1,
+      "esm_notification_timeout": 10800,
+      "esm_expiration_threshold": 10800,
+      "id": 10
+    },
+    {
+      "esm_submit": "Submit",
+      "esm_title": "잠을 청한 뒤 실제로 잠들기까지 걸린 시간",
+      "instructions": "nn분 형태로 답변해주세요.",
+      "esm_type": 1,
+      "esm_notification_timeout": 10800,
+      "esm_expiration_threshold": 10800,
+      "id": 11
+    },
+    {
+      "esm_submit": "제출",
+      "esm_title": "오늘 일어난 시각",
+      "instructions": "nn시 nn분 형태로 답변해주세요.",
+      "esm_type": 1,
+      "esm_notification_timeout": 10800,
+      "esm_expiration_threshold": 10800,
+      "id": 12
+    },
+    {
+      "esm_submit": "Submit",
+      "esm_title": "지난 밤 수면의 질이 어땠나요?",
+      "esm_type": 2,
+      "esm_radios": [
+        "매우 좋음",
+        "대체로 좋음",
+        "대체로 나쁨",
+        "매우 나쁨"
+      ],
+      "esm_notification_timeout": 10800,
+      "esm_expiration_threshold": 10800,
+      "id": 13
+    },
+    {
+      "esm_submit": "Submit",
+      "esm_title": "취침이 지연된 이유는 무엇인가요?",
+      "esm_type": 3,
+      "esm_checkboxes": [
+        "과제",
+        "갑작스러운 약속 등 외부 사정",
+        "폰",
+        "다른 여가 활동",
+        "잠이 안 와서",
+        "해당 없음 - 계획대로 잠",
+        "기타"
+      ],
+      "esm_notification_timeout": 10800,
+      "esm_expiration_threshold": 10800,
+      "id": 14
+    },
+    {
+      "esm_submit": "Submit",
+      "esm_title": "어젯밤 취침 전 1시간 동안 폰을 사용한 이유는 무엇인가요?",
+      "esm_type": 3,
+      "esm_checkboxes": [
+        "잠이 안 와서",
+        "자기 싫어서",
+        "재미있어서",
+        "폰을 사용하지 않았음",
+        "기타"
+      ],
+      "esm_notification_timeout": 10800,
+      "esm_expiration_threshold": 10800,
+      "id": 15
+    },
+    {
+      "esm_submit": "제출",
+      "esm_title": "(저녁) 지금 이 순간 '초조'의 정도",
+      "esm_type": 4,
+      "esm_likert_max": 7,
+      "esm_likert_min_label": "전혀 초조하지 않음",
+      "instructions": "",
+      "esm_likert_max_label": "매우 초조함",
+      "esm_notification_timeout": 3600,
+      "esm_expiration_threshold": 3600,
+      "id": 16
+    },
+    {
+      "esm_submit": "제출",
+      "esm_title": "(취침 전) 지금 이 순간 '초조'의 정도",
+      "esm_type": 4,
+      "esm_likert_max": 7,
+      "esm_likert_min_label": "전혀 초조하지 않음",
+      "esm_likert_max_label": "매우 초조함",
+      "esm_notification_timeout": 1800,
+      "esm_expiration_threshold": 1800,
+      "id": 17
+    },
+    {
+      "esm_submit": "제출",
+      "esm_title": "(저녁) 지금 이 순간 '불안'의 정도",
+      "esm_type": 4,
+      "esm_likert_max": 7,
+      "esm_likert_min_label": "전혀 불안하지 않음",
+      "esm_likert_max_label": "매우 불안함",
+      "esm_notification_timeout": 3600,
+      "esm_expiration_threshold": 3600,
+      "id": 18
+    },
+    {
+      "esm_submit": "제출",
+      "esm_title": "(취침 전) 지금 이 순간 '불안'의 정도",
+      "esm_type": 4,
+      "esm_likert_max": 7,
+      "esm_likert_min_label": "전혀 불안하지 않음",
+      "esm_likert_max_label": "매우 불안함",
+      "esm_notification_timeout": 1800,
+      "esm_expiration_threshold": 1800,
+      "id": 19
+    },
+    {
+      "esm_submit": "제출",
+      "esm_title": "(저녁) 지금 이 순간 '짜증' 정도",
+      "esm_type": 4,
+      "esm_likert_max": 7,
+      "esm_likert_min_label": "전혀 짜증나지 않음",
+      "esm_likert_max_label": "매우 짜증남",
+      "esm_notification_timeout": 3600,
+      "esm_expiration_threshold": 3600,
+      "id": 20
+    },
+    {
+      "esm_submit": "제출",
+      "esm_title": "(취침 전) 지금 이 순간 '짜증' 정도",
+      "esm_type": 4,
+      "esm_likert_max": 7,
+      "esm_likert_min_label": "전혀 짜증나지 않음",
+      "esm_likert_max_label": "매우 짜증남",
+      "esm_notification_timeout": 1800,
+      "esm_expiration_threshold": 1800,
+      "id": 21
+    },
+    {
+      "esm_submit": "제출",
+      "esm_title": "(저녁) 지금 이 순간 '우울' 정도",
+      "esm_type": 4,
+      "esm_likert_max": 7,
+      "esm_likert_min_label": "전혀 우울하지 않음",
+      "esm_likert_max_label": "매우 우울함",
+      "esm_notification_timeout": 3600,
+      "esm_expiration_threshold": 3600,
+      "id": 22
+    },
+    {
+      "esm_submit": "제출",
+      "esm_title": "(취침 전) 지금 이 순간 '우울' 정도",
+      "esm_type": 4,
+      "esm_likert_max": 7,
+      "esm_likert_min_label": "전혀 우울하지 않음",
+      "esm_likert_max_label": "매우 우울함",
+      "esm_notification_timeout": 1800,
+      "esm_expiration_threshold": 1800,
+      "id": 23
+    },
+    {
+      "esm_submit": "제출",
+      "esm_title": "(저녁) 지금 이 순간 '외로움' 정도",
+      "esm_type": 4,
+      "esm_likert_max": 7,
+      "esm_likert_min_label": "전혀 외롭지 않음",
+      "esm_likert_max_label": "매우 외로움",
+      "esm_notification_timeout": 3600,
+      "esm_expiration_threshold": 3600,
+      "id": 24
+    },
+    {
+      "esm_submit": "제출",
+      "esm_title": "(취침 전) 지금 이 순간 '외로움' 정도",
+      "esm_type": 4,
+      "esm_likert_max": 7,
+      "esm_likert_min_label": "전혀 외롭지 않음",
+      "esm_likert_max_label": "매우 외로움",
+      "esm_notification_timeout": 1800,
+      "esm_expiration_threshold": 1800,
+      "id": 25
+    },
+    {
+      "esm_submit": "제출",
+      "esm_title": "(저녁) 지금 이 순간 '지루함' 정도",
+      "esm_type": 4,
+      "esm_likert_max": 7,
+      "esm_likert_min_label": "전혀 지루하지 않음",
+      "esm_likert_max_label": "매우 지루함",
+      "esm_notification_timeout": 3600,
+      "esm_expiration_threshold": 3600,
+      "id": 26
+    },
+    {
+      "esm_submit": "제출",
+      "esm_title": "(취침 전) 지금 이 순간 '지루함' 정도",
+      "esm_type": 4,
+      "esm_likert_max": 7,
+      "esm_likert_min_label": "전혀 지루하지 않음",
+      "esm_likert_max_label": "매우 지루함",
+      "esm_notification_timeout": 1800,
+      "esm_expiration_threshold": 1800,
+      "id": 27
+    }
+  ],
+  "schedules": [
+    {
+      "title": "취침 4-5시간 전 무작위",
+      "type": "random",
+      "esm_keep": false,
+      "questions": [
+        1,
+        2,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        3,
+        4
+      ],
+      "firsthour": "19:00",
+      "lasthour": "20:00",
+      "randomCount": 1,
+      "randomInterval": 60
+    },
+    {
+      "title": "취침 60-90분 전 무작위",
+      "type": "random",
+      "esm_keep": false,
+      "questions": [
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        5,
+        6,
+        7,
+        8
+      ],
+      "firsthour": "22:00",
+      "lasthour": "23:00",
+      "randomCount": 1,
+      "randomInterval": 30
+    },
+    {
+      "title": "기상 0-60분 후 무작위",
+      "type": "random",
+      "esm_keep": false,
+      "questions": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "firsthour": "07:00",
+      "lasthour": "08:00",
+      "randomCount": 1,
+      "randomInterval": 180
+    }
+  ],
+  "sensors": [
+    {
+      "setting": "webservice_wifi_only",
+      "value": false
+    },
+    {
+      "setting": "webservice_charging",
+      "value": false
+    },
+    {
+      "setting": "frequency_webservice",
+      "value": 60
+    },
+    {
+      "setting": "frequency_clean_old_data",
+      "value": 0
+    },
+    {
+      "setting": "webservice_silent",
+      "value": false
+    },
+    {
+      "setting": "fallback_network",
+      "value": 30
+    },
+    {
+      "setting": "remind_to_charge",
+      "value": true
+    },
+    {
+      "setting": "foreground_priority",
+      "value": true
+    },
+    {
+      "setting": "debug_flag",
+      "value": true
+    },
+    {
+      "setting": "frequency_sync_config",
+      "value": 60
+    },
+    {
+      "setting": "enable_config_update",
+      "value": false
+    },
+    {
+      "setting": "status_applications",
+      "value": true
+    },
+    {
+      "setting": "status_notifications",
+      "value": false
+    },
+    {
+      "setting": "status_crashes",
+      "value": false
+    },
+    {
+      "setting": "frequency_applications",
+      "value": 30
+    },
+    {
+      "setting": "status_keyboard",
+      "value": false
+    },
+    {
+      "setting": "mask_notification",
+      "value": false
+    },
+    {
+      "setting": "mask_keyboard",
+      "value": false
+    },
+    {
+      "setting": "mask_touch_text",
+      "value": false
+    },
+    {
+      "setting": "status_screentext",
+      "value": false
+    },
+    {
+      "setting": "package_specification",
+      "value": "2"
+    },
+    {
+      "setting": "package_names",
+      "value": ""
+    },
+    {
+      "setting": "status_battery",
+      "value": false
+    },
+    {
+      "setting": "communication",
+      "value": false
+    },
+    {
+      "setting": "status_communication_events",
+      "value": false
+    },
+    {
+      "setting": "status_calls",
+      "value": false
+    },
+    {
+      "setting": "status_messages",
+      "value": false
+    },
+    {
+      "setting": "status_installations",
+      "value": false
+    },
+    {
+      "setting": "status_screen",
+      "value": true
+    },
+    {
+      "setting": "status_touch",
+      "value": false
+    },
+    {
+      "setting": "status_telephony",
+      "value": false
+    },
+    {
+      "setting": "status_timezone",
+      "value": false
+    },
+    {
+      "setting": "frequency_timezone",
+      "value": 20000
+    },
+    {
+      "setting": "status_accelerometer",
+      "value": false
+    },
+    {
+      "setting": "frequency_accelerometer",
+      "value": 20000
+    },
+    {
+      "setting": "threshold_accelerometer",
+      "value": 0
+    },
+    {
+      "setting": "frequency_accelerometer_enforce",
+      "value": false
+    },
+    {
+      "setting": "status_barometer",
+      "value": false
+    },
+    {
+      "setting": "frequency_barometer",
+      "value": 20000
+    },
+    {
+      "setting": "threshold_barometer",
+      "value": 0
+    },
+    {
+      "setting": "frequency_barometer_enforce",
+      "value": false
+    },
+    {
+      "setting": "status_bluetooth",
+      "value": false
+    },
+    {
+      "setting": "frequency_bluetooth",
+      "value": 60
+    },
+    {
+      "setting": "status_gravity",
+      "value": false
+    },
+    {
+      "setting": "frequency_gravity",
+      "value": 20000
+    },
+    {
+      "setting": "threshold_gravity",
+      "value": 0
+    },
+    {
+      "setting": "frequency_gravity_enforce",
+      "value": false
+    },
+    {
+      "setting": "status_gyroscope",
+      "value": false
+    },
+    {
+      "setting": "frequency_gyroscope",
+      "value": 20000
+    },
+    {
+      "setting": "threshold_gyroscope",
+      "value": 0
+    },
+    {
+      "setting": "frequency_gyroscope_enforce",
+      "value": false
+    },
+    {
+      "setting": "status_light",
+      "value": false
+    },
+    {
+      "setting": "frequency_light",
+      "value": 20000
+    },
+    {
+      "setting": "threshold_light",
+      "value": 0
+    },
+    {
+      "setting": "frequency_light_enforce",
+      "value": false
+    },
+    {
+      "setting": "status_linear_accelerometer",
+      "value": false
+    },
+    {
+      "setting": "frequency_linear_accelerometer",
+      "value": 20000
+    },
+    {
+      "setting": "threshold_linear_accelerometer",
+      "value": 0
+    },
+    {
+      "setting": "frequency_linear_accelerometer_enforce",
+      "value": false
+    },
+    {
+      "setting": "location",
+      "value": false
+    },
+    {
+      "setting": "status_location_gps",
+      "value": false
+    },
+    {
+      "setting": "status_location_network",
+      "value": false
+    },
+    {
+      "setting": "frequency_gps",
+      "value": 180
+    },
+    {
+      "setting": "frequency_network",
+      "value": 300
+    },
+    {
+      "setting": "min_location_gps_accuracy",
+      "value": 150
+    },
+    {
+      "setting": "min_location_network_accuracy",
+      "value": 1500
+    },
+    {
+      "setting": "location_expiration_time",
+      "value": 300
+    },
+    {
+      "setting": "status_location_passive",
+      "value": false
+    },
+    {
+      "setting": "location_save_all",
+      "value": false
+    },
+    {
+      "setting": "status_magnetometer",
+      "value": false
+    },
+    {
+      "setting": "frequency_magnetometer",
+      "value": 20000
+    },
+    {
+      "setting": "threshold_magnetometer",
+      "value": 0
+    },
+    {
+      "setting": "frequency_magnetometer_enforce",
+      "value": false
+    },
+    {
+      "setting": "network",
+      "value": false
+    },
+    {
+      "setting": "status_network_events",
+      "value": false
+    },
+    {
+      "setting": "status_network_traffic",
+      "value": false
+    },
+    {
+      "setting": "status_processor",
+      "value": false
+    },
+    {
+      "setting": "status_proximity",
+      "value": false
+    },
+    {
+      "setting": "frequency_proximity",
+      "value": 20000
+    },
+    {
+      "setting": "threshold_proximity",
+      "value": 0
+    },
+    {
+      "setting": "frequency_proximity_enforce",
+      "value": false
+    },
+    {
+      "setting": "status_rotation",
+      "value": false
+    },
+    {
+      "setting": "frequency_rotation",
+      "value": 20000
+    },
+    {
+      "setting": "threshold_rotation",
+      "value": 0
+    },
+    {
+      "setting": "frequency_rotation_enforce",
+      "value": false
+    },
+    {
+      "setting": "status_temperature",
+      "value": false
+    },
+    {
+      "setting": "frequency_temperature",
+      "value": 20000
+    },
+    {
+      "setting": "threshold_temperature",
+      "value": 0
+    },
+    {
+      "setting": "frequency_temperature_enforce",
+      "value": false
+    },
+    {
+      "setting": "status_wifi",
+      "value": false
+    },
+    {
+      "setting": "frequency_wifi",
+      "value": 60
+    },
+    {
+      "setting": "status_screenshot",
+      "value": false
+    },
+    {
+      "setting": "capture_time_interval",
+      "value": 5
+    },
+    {
+      "setting": "compress_rate",
+      "value": 20
+    },
+    {
+      "setting": "status_screenshot_local_storage",
+      "value": false
+    },
+    {
+      "setting": "screenshot_package_names",
+      "value": ""
+    },
+    {
+      "setting": "screenshot_package_specification",
+      "value": "2"
+    },
+    {
+      "setting": "status_notes",
+      "value": false
+    },
+    {
+      "setting": "status_plugin_ambient_noise",
+      "value": false
+    },
+    {
+      "setting": "frequency_plugin_ambient_noise",
+      "value": 5
+    },
+    {
+      "setting": "plugin_ambient_noise_sample_size",
+      "value": 30
+    },
+    {
+      "setting": "plugin_ambient_noise_silence_threshold",
+      "value": 50
+    },
+    {
+      "setting": "status_plugin_openweather",
+      "value": false
+    },
+    {
+      "setting": "plugin_openweather_frequency",
+      "value": 30
+    },
+    {
+      "setting": "plugin_openweather_api_key",
+      "value": ""
+    },
+    {
+      "setting": "plugin_openweather_measurement_units",
+      "value": "metric"
+    },
+    {
+      "setting": "status_esm",
+      "value": true
+    },
+    {
+      "setting": "status_webservice",
+      "value": true
+    }
+  ]
+}
